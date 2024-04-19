@@ -1,0 +1,255 @@
+\documentclass[12pt]{article}
+\usepackage{hyperref}
+\usepackage[singlespacing]{setspace}
+\usepackage[margin=1in]{geometry}
+\usepackage{indentfirst}   % Indents first paragraph. change if u want ig
+\usepackage{setspace} 
+\usepackage{qtree}
+\usepackage[most]{tcolorbox}
+\usepackage{titling}
+\usepackage{float}
+
+\hypersetup{
+    bookmarks=false,                                % show bookmarks bar?
+    pdftitle={Software Requirement Specification},  % title
+    pdfauthor={Jean-Philippe Eisenbarth},           % author
+    pdfsubject={TeX and LaTeX},                     % subject of the document
+    pdfkeywords={TeX, LaTeX, graphics, images},     % list of keywords
+    colorlinks=true,        % false: boxed links; true: colored links
+    linkcolor=blue,         % color of internal links
+    citecolor=black,        % color of links to bibliography
+    filecolor=black,        % color of file links
+    urlcolor=purple,        % color of external links
+    linktoc=page            % only page is linked
+}%
+\def\myversion{1.0 }
+\date{}
+%\title{%
+
+%}
+\begin{document}
+
+\begin{flushleft}
+    \rule{16cm}{5pt}\vskip1cm
+    \begin{bfseries}
+        \Huge{Milestone 6 Evaluation}\\
+        \vspace{1.9cm}
+        VehID\\
+        \vspace{1.2cm}
+        \LARGE{Version \myversion}\\
+        \vspace{1.2cm}
+        \textnormal{Remington Greko, Spencer Hirsch, Thomas Johnson, Alexis Nagle} \\
+        \vspace{1.2cm}
+        \textnormal{Project Advisor: Dr. Marius Silaghi}\\
+        \textnormal{Project Client: Clayton Levins, Executive Director of Smart North Florida} \\
+        \vspace{1.2cm}
+        \textnormal{\today}\\
+    \end{bfseries}
+\end{flushleft}
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+
+\section{Progress Matrix}
+
+\noindent\begin{center}
+  \begin{tabular}{||p{3cm}|p{2.6cm}|p{2.3cm}|p{1.6cm}|p{1.6cm}|p{1.2cm}|p{2cm}||}
+    \hline
+    \hline
+    \textbf{Task} & \textbf{Completion \%} & \textbf{Remington} & \textbf{Spencer} & \textbf{Thomas} & \textbf{Alexis} & \textbf{To-do} \\
+    \hline
+    Test/Demo System & 100\% & 50\% & 0\% & 50\% & 0\%  & NA\\
+    \hline
+    Conduct Evaluation and Analyze Results & 100\% & 0\% & 50\% & 0\% & 50\%  & NA\\
+    \hline
+    Create User/Developer Manual & 100\% & 25\% & 25\% & 25\% & 25\%  & NA\\
+    \hline
+    Create Demo Video & 100\% & 0\% & 50\% & 0\% & 50\%  & NA\\
+    \hline
+    Sprint Planning & 100\% & 25\% & 25\% & 25\% & 25\%  & NA\\
+    \hline
+    Milestone Evaluation & 100\% & 25\% & 25\% & 25\% & 25\%  & NA\\
+    \hline
+    \hline
+  \end{tabular}
+\end{center}
+
+\section{Discussion - Milestone 6}
+
+\subsection{Tasks}
+
+\noindent\textbf{Test/Demo System:} For this milestone, we have completed our project and it was now time to 
+perform tests to ensure that our appplication is working. This involved testing that each component was working with
+one another. We have been continuously testing our neural networks as they are built off of one another. However, this
+time we finally linked our neural network subsystem with our web application and database.
+
+\medskip
+
+\noindent\textbf{Conduct Evaluation and Analyze Results:} Now that we have completed our project we needed to reflect
+on the performance of our system. This included manually validating our test data from a neural network subsystem as
+well as ensuring the usability of our web application and database.
+
+\medskip
+
+\noindent\textbf{Create User/Developer Manual:} We created our User and Developer Manual is this milestone touching
+on the technical components of our project. For the user manual we discuss how one may use our system. Our developer manual
+primarily focuses on the way our system is set up and how each individual component works.
+
+\medskip
+
+\noindent\textbf{Create Demo Video:}  We recorded a demonstration as outlined
+on Dr. Chan's website for the showcase.
+
+
+\medskip
+
+\noindent\textbf{Sprint Planning:} As with our previous milestones, at the beginning of each milestone we discuss the work that needs to be accomplished
+over the milestone and divide up tasks to ensure efficiency.
+
+\medskip
+
+\noindent\textbf{Milestone Evaluation:} We completed our milestone evaluation to summarize all of our work that we accomplished over the past few weeks,
+outlining the tasks that we accomplished. This time allows us to reflect on our work and find any issues that occured allowing us to correct it in the coming
+milestone.
+
+\medskip
+
+\subsection{Member Contribution}
+
+\noindent\textbf{Remington Greko:} For this milestone I contributed to creating the web application. I implemented the code to connect the JSON output from the CNNs to the 
+database used in the web application. I also made some modifications and fixes to multiple APIs and front-end components as new goals and issues arose throughout
+the milestone. Recorded the demo video for the web application. I also worked on completing the milestone evaluation and developer manual focusing on the web application 
+and database sections.
+
+\medskip
+
+\noindent\textbf{Spencer Hirsch:} For the milestone I participated in many of our tasks. This included, sprint planning and 
+evalulating the performance of the neural network subsystem as well as the web application and database. I also worked on
+our Milestone Evaluation Document and the User and Developer Manual.
+
+\medskip
+
+\noindent\textbf{Thomas Johnson:} For this milestone I continued in creating the web application. I continued to expand off of the front end, and once the CRUD functionalities were 
+implemented by Remi I added user functionalities to our tabulated display of the data. I added a `view more` button to display more entries in the list, and filtering functionality
+to display full or partial matches. I implemenmted the form functionality located in `index.html` to search the database for matches, and display all applicable matches into a modal 
+to be displayed for the user. I also did some minor styling to keep displays uniform between pages.
+\medskip
+
+\noindent\textbf{Alexis Nagle:} For this milestone, I contributed to many of our tasks. I helped record the demo video for the 
+neural network subsystem demonstration. I also worked on conducting the evaluation and including this into both our poster and 
+eBook from last milestone. In addition to finishing up those documents, I worked on adding the neural network information to the 
+user/developer manual. Just as previous milestones, I also participated in the sprint planning and creation of the milestone evaluation. 
+
+\section{Client}
+
+\subsection{Meeting Date}
+Date: Wednesday, April 10, 2024
+\subsection{Client Feedback}
+
+
+\noindent\textbf{Test/Demo System:} We demonstrated our system to our client who was very pleased with the work that
+we were able to complete. This was our final meeting so we were able to show him our project in its entirety.
+
+\medskip
+
+\noindent\textbf{Conduct Evaluation and Analyze Results:} We discussed our Neural Network Subsystem evaluation results with our
+client. He seemed pleased with how the models were performing, we discussed our hardships with training and testing
+our data. Overall, he was pleased with what we were able to complete. In addition to discussing the results from the 
+Neural Network we asked our client for ideas of how to evaluate the web application. He gave us useful feedback of what
+he would expect us to do for this portion.
+
+\medskip
+
+\noindent\textbf{Create User/Developer Manual:} We did not discuss our User/Developer Manual with our client. We did
+however dicuss some of the topics discussed in the document.
+
+\medskip
+
+\noindent\textbf{Create Demo Video:} We did not demonstrate our recorded demonstration to our client, however we performed
+a live demo showing how the software works.
+
+
+\medskip
+
+\noindent\textbf{Sprint Planning:} Our client did not have any concerns with how to work was divided up. He was
+pleased with our results of the project.
+
+\medskip
+
+\noindent\textbf{Milestone Evaluation:} Our client did not have any comments on out milestone
+evaulation document.
+
+
+
+\section{Faculty Advisor}
+\subsection{Meeting Date}
+
+Date: Friday, April 12, 2024
+
+\subsection{Advisor Feedback}
+
+
+\noindent\textbf{Test/Demo System:} Dr. Silaghi seemed please with our demonstration of the system. After showing him our
+web application demo he had some questions about how we designed our web application and database.
+
+\medskip
+
+\noindent\textbf{Conduct Evaluation and Analyze Results:} We discussed our evaluation results on the poster with Dr. Silaghi,
+he didn't necessarily have any comments on the actual performace of the model.
+
+\medskip
+
+\noindent\textbf{Create User/Developer Manual:} We did not discuss our User/Developer Manual with Dr. Silaghi. Our primary focus
+during the meeting was regarding our poster and ebook.
+
+\medskip
+
+\noindent\textbf{Create Demo Video:} We demonstrated our updated web application to Dr. Silaghi, he seems pleased with our progress.
+
+\medskip
+
+\noindent\textbf{Sprint Planning:} Dr. Silaghi did not have any concerns at this time about how we divided work up for this Milestone.
+\medskip
+
+\noindent\textbf{Milestone Evaluation:} Dr. Silaghi did not express any concerns regarding our milestone evaluation.
+
+\bigskip
+
+\begin{center}
+\begin{tabular}{@{}p{1.9in}p{3in}p{.3in}p{1in}@{}}
+  Faculty Advisor Signature: & \hrulefill & Date: & \hrulefill\\
+\end{tabular}
+\end{center}
+
+\pagebreak
+
+\subsection{Student Evaluation}
+
+\begin{center}
+
+  \begin{tabular}{||p{4cm}|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c||}
+    \hline
+    \hline
+    Remington Greko & 0 &  1 & 2 & 3 & 4 & 5 & 5.5 & 6 & 6.5 & 7 & 7.5 & 8 & 8.5 & 9 & 9.5 & 10\\
+    \hline
+    Spencer Hirsch & 0 &  1 & 2 & 3 & 4 & 5 & 5.5 & 6 & 6.5 & 7 & 7.5 & 8 & 8.5 & 9 & 9.5 & 10\\
+    \hline
+    Thomas Johnson & 0 &  1 & 2 & 3 & 4 & 5 & 5.5 & 6 & 6.5 & 7 & 7.5 & 8 & 8.5 & 9 & 9.5 & 10\\
+    \hline
+    Alexis Nagle & 0 &  1 & 2 & 3 & 4 & 5 & 5.5 & 6 & 6.5 & 7 & 7.5 & 8 & 8.5 & 9 & 9.5 & 10\\
+    \hline
+    \hline
+    \end{tabular}
+\end{center}
+
+
+\begin{center}
+\begin{tabular}{@{}p{1.9in}p{3in}p{.3in}p{1in}@{}}
+  Faculty Advisor Signature: & \hrulefill & Date: & \hrulefill\\
+\end{tabular}
+\end{center}
+
+\end{document}
