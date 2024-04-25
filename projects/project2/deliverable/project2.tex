@@ -152,7 +152,7 @@ Lastly, Log Transformation, performed similarly to how the Standard Scaler prepr
 
 \subsection{Feature Reduction}
 
-Feature reduction was a necessary addition to this project, with the preprocessed dataset contain 33 features. Two feature reduction were tested to determine which method would be most effective. PCA was the first method tested and the results were very poor. Which led to the discovery of the T-distributed Stochastic Neighbor Embedding (t-SNE) method. This method turned out to be far more effective for this dataset. Figure 5 depicts the t-SNE feature reduction with the n\_clusters parameter set to 2. This was the most effective feature reduction method. Additional n\_cluster values were tested, n\_clusers set to 3 is shown in Figure 6. We can see that the clustering was far less effective using this method.
+Feature reduction was a necessary addition to this project, with the preprocessed dataset contain 33 features. Two feature reduction were tested to determine which method would be most effective. PCA was the first method tested and the results were very poor. Which led to the discovery of the T-distributed Stochastic Neighbor Embedding (t-SNE) method. This method turned out to be far more effective for this dataset. Figure 5 depicts the t-SNE feature reduction with the n\_clusters parameter set to 2. This was the most effective feature reduction method. Additional n\_cluster values were tested, n\_clusers set to 3 is shown in Figure 6. We can see that the clustering was far less effective using this method. For this reason the only feature reduction used going forward is the t-SNE method with n\_clusers set to 2, this is used acorss all methods discussed below.
 
 \begin{figure}[H]
     \centering
@@ -170,6 +170,8 @@ Feature reduction was a necessary addition to this project, with the preprocesse
 
 \subsection{Clustering}
 
+For the purposes of this study three unsupervised machine learning clustering algorithms were employed, K-Means, Hierarchical, and DBSCAN. As previously mention, the metric that determines the highest performing method is the Silhouette Score. 
+
 \subsubsection{K-Means}
 
 \begin{figure}[H]
@@ -178,6 +180,8 @@ Feature reduction was a necessary addition to this project, with the preprocesse
     \caption{Visual representation of dataset clustered with K-Means method with t-SNE feature reduction applied.}
 \end{figure}
 
+The first method tested was the K-Means algorithm, this was paired with all of the previously mentioned preprocessing methods, however, with K-Means none of these methods proved to be useful. K-Means clustering paired with t-SNE was sufficient in acheiving the highest Silhouette Score for this method. K-Means unwent hyper-parameter tuning where I attempted to optimize the Silhouette Score my increasing the number of clusters, for this case 2 cluster throuhg 10 clusters where tested. K-Means with six clusters ended up being the best performing model. This acheived a Silhouette Score of 0.3843, in comparison to the other methods discussed later in this paper this was the worst performing model. Figure 6, visualizes the results returned using K-Means clustering. We can see that there were farily well constructed clusters for 4 of them, however we can see some outliers towards the right hand side of the data. There are two individual points that seemingly construct their own clusters. Upon this realization, the assumption would have been that four clusters would perform better, this however, was not the case. A common theme shared among all results of K-Means was that these points created their own clusters, with the expection of the 2 cluster model.
+
 \subsubsection{Hierarchical}
 
 \begin{figure}[H]
@@ -185,6 +189,8 @@ Feature reduction was a necessary addition to this project, with the preprocesse
     \includegraphics[width=0.4\textwidth]{images/hierarchical.png}
     \caption{Visual representation of dataset clustered with Hierarchical method with t-SNE feature reduction and Quantile Transformation applied.}
 \end{figure}
+
+
 
 \subsubsection{DBSCAN}
 
