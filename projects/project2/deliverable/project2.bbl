@@ -1,0 +1,210 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{patel}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1955d9f7eff8dbc3b9ea444c11e0fec4}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Vishakh},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{1955d9f7eff8dbc3b9ea444c11e0fec4}
+      \strng{fullhash}{1955d9f7eff8dbc3b9ea444c11e0fec4}
+      \strng{bibnamehash}{1955d9f7eff8dbc3b9ea444c11e0fec4}
+      \strng{authorbibnamehash}{1955d9f7eff8dbc3b9ea444c11e0fec4}
+      \strng{authornamehash}{1955d9f7eff8dbc3b9ea444c11e0fec4}
+      \strng{authorfullhash}{1955d9f7eff8dbc3b9ea444c11e0fec4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Kaggle}
+      \field{note}{Accessed on April 22, 2024. Available online: \url{https://www.kaggle.com/datasets/vishakhdapat/customer-segmentation-clustering/data}}
+      \field{title}{Customer Segmentation/Clustering}
+    \endentry
+    \entry{zhao}{article}{}
+      \name{author}{1}{}{%
+        {{hash=503c5818591fdce1ed60f5ca79515676}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Jiaqi},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{503c5818591fdce1ed60f5ca79515676}
+      \strng{fullhash}{503c5818591fdce1ed60f5ca79515676}
+      \strng{bibnamehash}{503c5818591fdce1ed60f5ca79515676}
+      \strng{authorbibnamehash}{503c5818591fdce1ed60f5ca79515676}
+      \strng{authornamehash}{503c5818591fdce1ed60f5ca79515676}
+      \strng{authorfullhash}{503c5818591fdce1ed60f5ca79515676}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied and Computational Engineering}
+      \field{month}{03}
+      \field{title}{Customer segmentation application based on K-Means}
+      \field{volume}{47}
+      \field{year}{2024}
+      \field{pages}{242\bibrangedash 247}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.54254/2755-2721/47/20241400
+      \endverb
+    \endentry
+    \entry{sokol}{article}{}
+      \name{author}{2}{}{%
+        {{hash=491b1ce127860b6a8d71f6efec594c07}{%
+           family={Sokol},
+           familyi={S\bibinitperiod},
+           given={Ondřej},
+           giveni={O\bibinitperiod}}}%
+        {{hash=376f2c73388d95ccc2defa378c86dc6d}{%
+           family={Holý},
+           familyi={H\bibinitperiod},
+           given={Václav},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8c65f517057ff74ab11717b87f393d9}
+      \strng{fullhash}{f8c65f517057ff74ab11717b87f393d9}
+      \strng{bibnamehash}{f8c65f517057ff74ab11717b87f393d9}
+      \strng{authorbibnamehash}{f8c65f517057ff74ab11717b87f393d9}
+      \strng{authornamehash}{f8c65f517057ff74ab11717b87f393d9}
+      \strng{authorfullhash}{f8c65f517057ff74ab11717b87f393d9}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Market Research}
+      \field{number}{4}
+      \field{title}{The role of shopping mission in retail customer segmentation}
+      \field{volume}{63}
+      \field{year}{2020}
+      \field{pages}{454\bibrangedash 470}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1177/1470785320921011
+      \endverb
+    \endentry
+    \entry{john}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ed41c3eaf9f80efba519c184b8ebce4e}{%
+           family={John},
+           familyi={J\bibinitperiod},
+           given={Jeen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c7be432ccebe8bcfbd62ad02064a90e0}{%
+           family={Shobayo},
+           familyi={S\bibinitperiod},
+           given={Olamilekan},
+           giveni={O\bibinitperiod}}}%
+        {{hash=17a25defb7d70318fd8e84d7728c3529}{%
+           family={Ogunleye},
+           familyi={O\bibinitperiod},
+           given={Bayode},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{7a1db42d77c7f779964b98cc928ad0b2}
+      \strng{fullhash}{7a1db42d77c7f779964b98cc928ad0b2}
+      \strng{bibnamehash}{7a1db42d77c7f779964b98cc928ad0b2}
+      \strng{authorbibnamehash}{7a1db42d77c7f779964b98cc928ad0b2}
+      \strng{authornamehash}{7a1db42d77c7f779964b98cc928ad0b2}
+      \strng{authorfullhash}{7a1db42d77c7f779964b98cc928ad0b2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Analytics}
+      \field{month}{10}
+      \field{title}{An Exploration of Clustering Algorithms for Customer Segmentation in the UK Retail Market}
+      \field{volume}{2}
+      \field{year}{2023}
+      \field{pages}{809\bibrangedash 823}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.3390/analytics2040042
+      \endverb
+    \endentry
+    \entry{hicham}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9a2b715d3889253f68b9cfeb05c31f0a}{%
+           family={Hicham},
+           familyi={H\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=876644bbcb28225856d46958182102ce}{%
+           family={Karim},
+           familyi={K\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{f7e9b648cf3b5b8068069d3942324d73}
+      \strng{fullhash}{f7e9b648cf3b5b8068069d3942324d73}
+      \strng{bibnamehash}{f7e9b648cf3b5b8068069d3942324d73}
+      \strng{authorbibnamehash}{f7e9b648cf3b5b8068069d3942324d73}
+      \strng{authornamehash}{f7e9b648cf3b5b8068069d3942324d73}
+      \strng{authorfullhash}{f7e9b648cf3b5b8068069d3942324d73}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Advanced Computer Science and Applications}
+      \field{number}{10}
+      \field{title}{Analysis of unsupervised machine learning techniques for an efficient customer segmentation using clustering ensemble and spectral clustering}
+      \field{volume}{13}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.14569/ijacsa.2022.0131016
+      \endverb
+    \endentry
+    \entry{turkmen}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7a2912968d242846b432551971c84f14}{%
+           family={Turkmen},
+           familyi={T\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{7a2912968d242846b432551971c84f14}
+      \strng{fullhash}{7a2912968d242846b432551971c84f14}
+      \strng{bibnamehash}{7a2912968d242846b432551971c84f14}
+      \strng{authorbibnamehash}{7a2912968d242846b432551971c84f14}
+      \strng{authornamehash}{7a2912968d242846b432551971c84f14}
+      \strng{authorfullhash}{7a2912968d242846b432551971c84f14}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The European Journal of Social and Behavioural Sciences}
+      \field{number}{2}
+      \field{title}{Customer segmentation with machine learning for online retail industry}
+      \field{volume}{31}
+      \field{year}{2022}
+      \field{pages}{111\bibrangedash 136}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.15405/ejsbs.316
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
