@@ -58,7 +58,7 @@ Customer segmentation can serve as a useful tool in many disciplines, Zhao dicus
 
 Rather that exploring potential methods of customer segmentation, Holy and Sokol bring customer segmentation into the real-world. Their study deals with the study and development of a clustering algorithm to be utilized by a major Czech drugstore chain.\cite{sokol} Holy and Sokol utilize a variety of clustering methods paried with K-Means in order to better understand the patterns of customers, RFM, as discussed in Zhao,\cite{zhao} purchased products structure (PPS), and store mission (SM).
 
-Similarly to the study that I have conducted here, John, Shobayo, and Ogunleye aim to study a variety of unsupervised machine learning methods, along with Principle Component Analysis and RFM.\cite{john} The goal of the study is similar to mine, as they are aiming to find the most effective method for customer segmentation. The authors of this paper explore, K-Means clustering, Gaussian mixture model (GMM), density-based spatial clistering of applications with noise (DBSCAN), agglomerative clustering, and balanced iterative reduction and clustering using hierarchies (BIRCH).\cite{john} The study proved to perform well with the authors being able to acheieve a Silhoutette Score, a measure of consistency in the cluster, of 0.8, through the use of PCA and GMM.\cite{john}
+Similarly to the study that I have conducted here, John, Shobayo, and Ogunleye aim to study a variety of unsupervised machine learning methods, along with Principle Component Analysis and RFM.\cite{john} The goal of the study is similar to mine, as they are aiming to find the most effective method for customer segmentation. The authors of this paper explore, K-Means clustering, Gaussian mixture model (GMM), density-based spatial clustering of applications with noise (DBSCAN), agglomerative clustering, and balanced iterative reduction and clustering using hierarchies (BIRCH).\cite{john} The study proved to perform well with the authors being able to acheieve a Silhoutette Score, a measure of consistency in the cluster, of 0.8, through the use of PCA and GMM.\cite{john}
 
 Just as the previous study, Hicham and Karim utilize a number of unsupervised machine learning models for the purposes of customer segmentation. Their paper proposes a clustering ensemble method of, DBSCAN, K-Means, Mini Batch K-Means, and MeanShift. Through the use of their method, they were able to acheive a Silhouette Score of 0.73.\cite{hicham} This method proved to be useful, DBSCAN itself was only able to acheive 0.72 itself, so there was marginal gain with their technique.\cite{hicham}
 
@@ -117,7 +117,7 @@ After manual feature reduction and cleaning was performed, additional preprocess
 a variety of methods: Standard Scaler, Robust Scaler, Quantile Transformation, and Log Transformation. All of these methods were used 
 in an attempt to increase the effectiveness of the clusters. We can see that some of the preprocessing methods formed stonger clusters than others. Robust Scaler, seen in figure two, was the worst preprocessing method used when it came to clustering. The method that had the strongest clustering was the preprocessing performed with Quantile Transformation, seen in Figure 3.
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=0.4\textwidth]{images/standard_scaler.png}
     \caption{Visual representation of data preprocessed using Standard Scaler.}
@@ -125,7 +125,7 @@ in an attempt to increase the effectiveness of the clusters. We can see that som
 
 In Figure 1, we can see well forming clusters, that appear to spread out more in a pedal shape. This is not a necessarily poor way to cluster the data, however this method was not as effective as clustering as some of the others.
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=0.4\textwidth]{images/robust_scaler.png}
     \caption{Visual representation of data preprocessed using Robust Scaler.}
@@ -133,7 +133,8 @@ In Figure 1, we can see well forming clusters, that appear to spread out more in
 
 Figure 2 contains the cluster for the worst performing preprocessing method, creating seemingly one complete cluster rather than the other preprocessing methods which created smaller more effective clusters.
 
-\begin{figure}[H]
+% \vspace{-1.7cm}
+\begin{figure}
     \centering
     \includegraphics[width=0.4\textwidth]{images/quantile_transform.png}
     \caption{Visual representation of data preprocessed using Quantile Transformation.}
@@ -143,7 +144,7 @@ Figure 3 created what appears to be the most effective method at preprocessing f
 
 Lastly, Log Transformation, performed similarly to how the Standard Scaler preprocessing performed. It created smaller clusters within a larger cluster of data. 
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=0.4\textwidth]{images/log_transformed.png}
     \caption{Visual representation of data preprocessed using Log Transformation.}
@@ -154,7 +155,7 @@ Lastly, Log Transformation, performed similarly to how the Standard Scaler prepr
 
 Feature reduction was a necessary addition to this project, with the preprocessed dataset contain 33 features. Two feature reduction were tested to determine which method would be most effective. PCA was the first method tested and the results were very poor. Which led to the discovery of the T-distributed Stochastic Neighbor Embedding (t-SNE) method. This method turned out to be far more effective for this dataset. Figure 5 depicts the t-SNE feature reduction with the n\_clusters parameter set to 2. This was the most effective feature reduction method. Additional n\_cluster values were tested, n\_clusers set to 3 is shown in Figure 6. We can see that the clustering was far less effective using this method. For this reason the only feature reduction used going forward is the t-SNE method with n\_clusers set to 2, this is used acorss all methods discussed below.
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=0.4\textwidth]{images/tsne_2.png}
     \caption{Visual representation of data with t-SNE feature reduction with 2 n\_clusters.}
@@ -162,7 +163,7 @@ Feature reduction was a necessary addition to this project, with the preprocesse
 
 
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=0.4\textwidth]{images/tsne_3.png}
     \caption{Visual representation of data with t-SNE feature reduction with 3 n\_clusters.}
@@ -174,7 +175,7 @@ For the purposes of this study three unsupervised machine learning clustering al
 
 \subsubsection{K-Means}
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=0.4\textwidth]{images/kmeans.png}
     \caption{Visual representation of dataset clustered with K-Means method with t-SNE feature reduction applied.}
@@ -184,25 +185,87 @@ The first method tested was the K-Means algorithm, this was paired with all of t
 
 \subsubsection{Hierarchical}
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=0.4\textwidth]{images/hierarchical.png}
     \caption{Visual representation of dataset clustered with Hierarchical method with t-SNE feature reduction and Quantile Transformation applied.}
 \end{figure}
 
+Hierarchical clustering was another method that was used for this project, similarly to K-Means, t-SNE feature reduction was used to reduce the dimensionality of the data. However, in addition to t-SNE the dataset was preprocessed using Quantile Transformation. All preprocesing methods were used, however, the highest Silhouette Score was returned using this method paired with t-SNE. This turned out to be the best performing model, with a Silhouette Score of 0.6483. We can see the resulting cluster visualzation in Figure 8, we can see how vastly different the results are in comparison to the K-Means Clustering algorithm. The cluster were much smaller and more concise which allowed for the higher Silhouette Score.
 
 
 \subsubsection{DBSCAN}
 
-\begin{figure}[H]
+\begin{figure}
     \centering
     \includegraphics[width=0.4\textwidth]{images/hierarchical.png}
     \caption{Visual representation of dataset clustered with DBSCAN method with t-SNE feature reduction and Quantile Transformation applied.}
 \end{figure}
-\section{Results}
-\section{Conclusion}
 
-\pagebreak
+Just as shown with Hierarchical Clustering, DBSCAN was used in part with t-SNE and Quantile Transfomation preprocessing. Again, all preprocesing methods were used for this model, however these returned the highest Silhouette Score. DBSCAN was not as effective as Hierarchical Clustering, however it was the second best performing method wiht a Silhouette Score of 0.5785. The visualization of the clusters can be seen in Figure 9, the clustering appears to be very similar to that of Figure 8, this is because the preprocesing method and feature reduction method used in both DBSCAN and Hierarchical Clustering were the same. This means that the results were solely reliant on the clustering algorithms themselves. Just as with the two previos model, DBSCAN went through hyper-parameter tuning in an attempt to increase the effectiveness of the model.
+
+\section{Results}
+
+It is clear that Hierarchical Clusering paired with t-SNE and Quantile Transformation was the most effective model at grouping customers together. With these clusters now, we can view the related information for these groups, to idenitfy patterns in this data to see what these groups are like. Tables, 2, 3, and 4 refer to selected clusters from the Hierachical clustering model. The cluster consists of 21 clusters, all looking similar to the ones presented. With these selected clusters distinct patterns can be indentified. We can see that one cluster has a significatly higher income than the others, and have fewer discounted purchases. In addition to these two attributes, we see and increase in the amount spent on wines. Information such as this is especially useful to companies who are interested in learning more about their customers and their spending habits. For example, Cluster 1 from Table 2, has the highest number of discounted purchases. This could be evidence that additional coupons would draw these customers in more, therefore we could look further at their purchasing history to better cater coupons to these groups to bring in more of their business.
+
+\begin{table}
+    \centering
+    \textbf{Hieracical Clustering: Cluster 1}
+        \begin{tabular}{|c|c|}
+            \hline
+            \textbf{Feature Name} & \textbf{Cluster Average} \\
+            \hline
+            Annual Income & \$49,770.84 \\
+            Amount Meat & \$44.22 \\
+            Amount Wines & \$82.01 \\
+            Discount Purchases & 3 \\
+            Store Purchases & 4 \\
+            Web Purchases & 3 \\
+            \hline
+        \end{tabular}
+    \caption{Extracted average information from Cluster 1 of Hierachical Clustering paired with t-SNE feature reduction and Qunatile Transfomation.}
+\end{table}
+
+\begin{table}
+    \centering
+    \textbf{Hieracical Clustering: Cluster 4}
+        \begin{tabular}{|c|c|}
+            \hline
+            \textbf{Feature Name} & \textbf{Cluster Average} \\
+            \hline
+            Annual Income & \$56,041.42 \\
+            Amount Meat & \$171.61 \\
+            Amount Wines & \$394.30 \\
+            Discount Purchases & 2 \\
+            Store Purchases & 6 \\
+            Web Purchases & 4 \\
+            \hline
+        \end{tabular}
+    \caption{Extracted average information from Cluster 4 of Hierachical Clustering paired with t-SNE feature reduction and Qunatile Transfomation.}
+\end{table}
+
+\begin{table}
+    \centering
+    \textbf{Hieracical Clustering: Cluster 19}
+        \begin{tabular}{|c|c|}
+            \hline
+            \textbf{Feature Name} & \textbf{Cluster Average} \\
+            \hline
+            Annual Income & \$74,421.19 \\
+            Amount Meat & \$472.14 \\
+            Amount Wines & \$557.78 \\
+            Discount Purchases & 1 \\
+            Store Purchases & 8 \\
+            Web Purchases & 5 \\
+            \hline
+        \end{tabular}
+    \caption{Extracted average information from Cluster 19 of Hierachical Clustering paired with t-SNE feature reduction and Qunatile Transfomation.}
+\end{table}
+
+\section{Conclusion and Future Work}
+
+This paper studied the effectiveness of a variety of preprocessing, feature reduction, and unsupervised machine learning methods in an attempt to find the most effective model for customer segmentation. Utilizing unsupervised machine learning for customer segmentation has proven itself to be a useful tool. Unfortunately, this study was unable to acheive as significant results as some mentioned in the Related Works section, such as Hicham and Karim's study.\cite{hicham} However, acheiving a Silhouette Score of 0.65 was not too far off. After reading Hicham and Karim's work, it would be interesting to follow their approach in creating an ensemble method with my selected models to attemptd to increase the Silhouette Score. Another interesting addition would be using this model on another customer segmentation dataset and to observe its performance. Overall, the study proved to be effective at clustering customers based on their demographic information and purchasing behaviors.
+
 
 \twocolumn[
 \begin{@twocolumnfalse}
